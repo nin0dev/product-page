@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    margin: 0 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.nav-logo a {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: .9em;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.nav-cta button {
+    padding: 10px 20px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f37736;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-size: 4em;
+    text-align: center;
+    margin: 10px;
+}
+
+header .block {
+    margin-top: 200px;
+    background-color: #f37736;
+    height: 400px;
+    border-radius: 35px;
+    width: 100%;
+}
+
+header .block img {
+    margin-top: -98px;
+}
+
+@media screen and (max-width: 780px) {
+    header h1 {
+        font-size: 1em;
+    }
+}
+
+/* CONTENT */
+.partners {
+    margin-top: 50px;
+}
+
+.partners h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 50%;
+}
+
+.partners-logos {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.partners div img {
+    width: 90px;
+    height: 40px;
+    opacity: .6;
+    filter: grayscale(1);
+    text-align: center;
+}
+
+hr.separator {
+    margin-top: 75px;
+    opacity: .2;
+}
+
+hr.line {
+    opacity: .2;
+}
+
+hr.dark-separator {
+    margin-top: 100px;
+}
+
+section.benefits {
+    margin-top: 75px;
+}
+
+section.benefits h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 50%;
+}
+
+section.benefits h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+}
+
+section.benefits p {
+    font-family: 'DM Sans', sans-serif;
+    opacity: .5;
+}
+
+section.benefits img {
+    height: 600px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.benefits-list div {
+    max-width: 300px;
+}
+
+.benefits-list div img {
+    margin-top: 20px;
+    height: 25px;
+    width: 25px;
+}
+
+.benefits-list h4 {
+    font-family: "Cormorant Garamond", serif;
+} 
+
+.benefits-list div p {
+    opacity: 50%;
+    font-family: "DM Sans", sans-serif;
+}
+
+.benefits img {
+    margin-top: 50px;
+}
+
+section.discover {
+    margin-top: 75px;
+}
+
+section.discover h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+}
+
+section.discover p {
+    font-family: 'DM Sans', sans-serif;
+}
+
+section.discover div div {
+    display: flex;
+    align-items: center;
+}
+
+section.discover div div span {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    opacity: .5;
+    margin-right: 40px;
+}
+
+section.discover button, .specs button {
+    background-color: #feb68f;
+    padding: 15px 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+section.discover img {
+    height: 600px;
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 50px;
+    object-fit: cover;
+}
+
+section.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+
+section.contact h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+section.contact p {
+    font-family: 'DM Sans', sans-serif;
+}
+
+section.contact button {
+    padding: 15px 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    background-color: #f37736;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    margin-bottom: 20px;
+}
+
+footer hr {
+    opacity: .3;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 20px;
+    font-size: 14px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
