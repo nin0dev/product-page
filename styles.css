@@ -60,6 +60,101 @@ nav {
     cursor: pointer;
 }
 
+.menu-toggle {
+    display: none;
+}
+  
+  /* En mobile, on l'affiche */
+  @media (max-width: 785px) {
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #000;
+        z-index: 3000;
+    }
+
+    .nav-menu,
+    .nav-cta {
+      display: none;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 2000;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .mobile-menu.active {
+    transform: translateY(0);
+  }
+  
+  .mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mobile-menu-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  .mobile-menu .close-menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+    flex-grow: 1;
+  }
+  
+  .mobile-menu ul li {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .mobile-menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  .mobile-menu-cta {
+    margin-top: auto;
+    text-align: center;
+  }
+  
+  .mobile-menu-cta button {
+    background-color: #f37736;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 header {
     font-family: "Cormorant Garamond", serif;
     font-weight: 300;
@@ -80,9 +175,30 @@ header .block img {
     margin-top: -98px;
 }
 
-@media screen and (max-width: 780px) {
+header .block .phone-img {
+    display: none;
+}
+
+@media screen and (max-width: 785px) {
     header h1 {
         font-size: 1em;
+    }
+
+    header .block .tablet-img {
+        display: none;
+    }
+
+    header .block .phone-img {
+        display: inline;
+        margin-top: -98px;
+    }
+
+    header .block {
+        margin-top: 200px;
+        background-color: #f37736;
+        height: 290px;
+        border-radius: 35px;
+        width: 100%;
     }
 }
 
@@ -154,6 +270,7 @@ section.benefits img {
     height: 600px;
     width: 100%;
     border-radius: 30px;
+    object-fit: cover;
 }
 
 .benefits-list {
@@ -220,6 +337,7 @@ section.discover button, .specs button {
     border-radius: 50px;
     cursor: pointer;
     margin-top: 30px;
+    color: #000;
 }
 
 section.discover img {
