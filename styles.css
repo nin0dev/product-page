@@ -196,6 +196,10 @@ header {
     margin: 10px;
 }
 
+header h1 {
+    font-size: 10vw;
+}
+
 header .block {
     margin-top: 200px;
     background-color: #f37736;
@@ -213,9 +217,6 @@ header .block .phone-img {
 }
 
 @media screen and (max-width: 785px) {
-    header h1 {
-        font-size: 1em;
-    }
 
     header .block .tablet-img {
         display: none;
